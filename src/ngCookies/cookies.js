@@ -38,8 +38,8 @@ angular.module('ngCookies', ['ng']).
      *   or a Date object indicating the exact date/time this cookie will expire.
      * - **secure** - `{boolean}` - If `true`, then the cookie will only be available through a
      *   secured connection.
-     * - **samesite** - `{string}` - prevents the browser from sending the cookie along with cross-site requests.
-     *   Accepts the values `lax` and `strict`. See the [OWASP Wiki](https://www.owasp.org/index.php/SameSite)
+     * - **samesite** - `{string}` - defines protocol for sending cookies along with cross-site requests.
+     *   Accepts the values `strict`, `lax`, and `none`. See the [OWASP Wiki](https://www.owasp.org/index.php/SameSite)
      *   for more info. Note that as of May 2018, not all browsers support `SameSite`,
      *   so it cannot be used as a single measure against Cross-Site-Request-Forgery (CSRF) attacks.
      *
